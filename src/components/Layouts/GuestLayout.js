@@ -7,7 +7,7 @@ const GuestLayout = ({ children }) => {
                 <title>PowerCrew</title>
             </Head>
 
-            <div className="font-sans text-gray-900 antialiased">
+            <div>
                 {children}
             </div>
         </div>
