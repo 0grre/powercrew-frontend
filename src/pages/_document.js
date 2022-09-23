@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html data-theme="herbalife">
+            <Html data-theme="herbalife" class="scroll-smooth">
                 <Head>
                     <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"/>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
@@ -17,7 +17,7 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto&display=swap" rel="stylesheet"/>
                 </Head>
 
-                <body className="font-roboto">
+                <body className="font-roboto" class="scroll-smooth">
                     <Main/>
                     <NextScript/>
                 </body>
