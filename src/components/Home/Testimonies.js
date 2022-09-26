@@ -6,9 +6,10 @@ export default function Testimonies({anchor}) {
         <>
             <section ref={anchor} className="hero py-12">
                 <div className="container">
-                    <div className="ml-6 ml-0 my-12 w-2/3 lg:w-2/5">
+                    <div className="ml-6 my-12 w-2/3 lg:w-2/5">
                         <h2 className="text-secondary font-open italic mb-6">Les Témoignages</h2>
-                        <h1 className="text-6xl font-open uppercase">Ils se sont lancé dans <span className="text-primary">l'aventure</span></h1>
+                        <h1 className="text-6xl font-open uppercase">Ils se sont lancé dans <span
+                            className="text-primary">l'aventure</span></h1>
                     </div>
 
                     <div className="divider"></div>
@@ -105,6 +106,6 @@ export default function Testimonies({anchor}) {
 
                 </div>
             </section>
-            </>
-            );
-            };
+        </>
+    );
+};

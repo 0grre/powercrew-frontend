@@ -4,7 +4,7 @@ import React from "react";
 export default function Header({anchor, anchor1, scrollIntoAnchor}) {
     return (
         <>
-            <div className="hero min-h-screen" ref={anchor}
+            <section className="hero min-h-screen" ref={anchor}
                  style={{backgroundImage: 'url(https://placeimg.com/1000/800/arch)'}}>
                 <div className="hero-content text-center">
                     <div className="text-base-100">
@@ -16,7 +16,7 @@ export default function Header({anchor, anchor1, scrollIntoAnchor}) {
                         </button>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 };

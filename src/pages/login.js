@@ -1,11 +1,11 @@
 import ApplicationLogo from '@/components/ApplicationLogo'
-import AuthCard from '@/components/AuthCard'
-import AuthSessionStatus from '@/components/AuthSessionStatus'
-import AuthValidationErrors from '@/components/AuthValidationErrors'
-import Button from '@/components/Button'
+import AuthCard from '@/components/Auth/AuthCard'
+import AuthSessionStatus from '@/components/Auth/AuthSessionStatus'
+import AuthValidationErrors from '@/components/Auth/AuthValidationErrors'
+import Button from '@/components/Auth/Button'
 import GuestLayout from '@/components/Layouts/GuestLayout'
-import Input from '@/components/Input'
-import Label from '@/components/Label'
+import Input from '@/components/Auth/Input'
+import Label from '@/components/Auth/Label'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useEffect, useState } from 'react'
@@ -44,8 +44,8 @@ const Login = () => {
             <AuthCard
                 logo={
                     <Link href="/">
-                        <a>
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                        <a className="text-5xl font-open">POWER<span
+                            className="text-primary">CREW</span>
                         </a>
                     </Link>
                 }>
@@ -101,7 +101,7 @@ const Login = () => {
                             />
 
                             <span className="ml-2 text-sm text-gray-600">
-                                Remember me
+                                Resté connecté
                             </span>
                         </label>
                     </div>
@@ -109,11 +109,11 @@ const Login = () => {
                     <div className="flex items-center justify-end mt-4">
                         <Link href="/forgot-password">
                             <a className="underline text-sm text-gray-600 hover:text-gray-900">
-                                Forgot your password?
+                                Mot de passe oublié ?
                             </a>
                         </Link>
 
-                        <Button className="ml-3">Login</Button>
+                        <Button className="ml-3">Se connecter</Button>
                     </div>
                 </form>
             </AuthCard>

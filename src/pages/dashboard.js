@@ -3,18 +3,12 @@ import Head from 'next/head'
 
 const Dashboard = () => {
     return (
-        <AppLayout
-            header={
-                <h2 className="font-semibold text-xl text-gray-800 leading-tight">
-                    Dashboard
-                </h2>
-            }>
-
+        <AppLayout>
             <Head>
                 <title>Power Crew - Dashboard</title>
             </Head>
 
-            <div className="py-12">
+            <section className="hero py-12 min-h-screen">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div className="p-6 bg-white border-b border-gray-200">
@@ -22,7 +16,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </AppLayout>
     )
 }

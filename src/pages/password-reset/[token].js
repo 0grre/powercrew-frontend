@@ -1,11 +1,11 @@
 import ApplicationLogo from '@/components/ApplicationLogo'
-import AuthCard from '@/components/AuthCard'
-import AuthSessionStatus from '@/components/AuthSessionStatus'
-import AuthValidationErrors from '@/components/AuthValidationErrors'
-import Button from '@/components/Button'
+import AuthCard from '@/components/Auth/AuthCard'
+import AuthSessionStatus from '@/components/Auth/AuthSessionStatus'
+import AuthValidationErrors from '@/components/Auth/AuthValidationErrors'
+import Button from '@/components/Auth/Button'
 import GuestLayout from '@/components/Layouts/GuestLayout'
-import Input from '@/components/Input'
-import Label from '@/components/Label'
+import Input from '@/components/Auth/Input'
+import Label from '@/components/Auth/Label'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useEffect, useState } from 'react'
@@ -43,8 +43,8 @@ const PasswordReset = () => {
             <AuthCard
                 logo={
                     <Link href="/">
-                        <a>
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                        <a className="text-5xl font-open">POWER<span
+                            className="text-primary">CREW</span>
                         </a>
                     </Link>
                 }>
@@ -72,7 +72,7 @@ const PasswordReset = () => {
 
                     {/* Password */}
                     <div className="mt-4">
-                        <Label htmlFor="password">Password</Label>
+                        <Label htmlFor="password">Mot de passe</Label>
                         <Input
                             id="password"
                             type="password"
@@ -86,7 +86,7 @@ const PasswordReset = () => {
                     {/* Confirm Password */}
                     <div className="mt-4">
                         <Label htmlFor="passwordConfirmation">
-                            Confirm Password
+                            Confirmation mot de passe
                         </Label>
 
                         <Input
@@ -102,7 +102,7 @@ const PasswordReset = () => {
                     </div>
 
                     <div className="flex items-center justify-end mt-4">
-                        <Button>Reset Password</Button>
+                        <Button>Modifier le mot de passe</Button>
                     </div>
                 </form>
             </AuthCard>

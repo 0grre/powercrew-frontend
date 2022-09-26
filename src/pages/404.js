@@ -1,14 +1,16 @@
-const NotFoundPage = () => (
-    <div className="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-        <div className="max-w-xl mx-auto sm:px-6 lg:px-8">
-            <div className="flex items-center pt-8 sm:justify-start sm:pt-0">
-                <div className="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
-                    404
-                </div>
+import Link from "next/link";
 
-                <div className="ml-4 text-lg text-gray-500 uppercase tracking-wider">
-                    Not Found
-                </div>
+const NotFoundPage = () => (
+    <div className="hero min-h-screen bg-base-100">
+        <div className="hero-content text-center">
+            <div className="max-w-md">
+                <h1><span className="text-left text-xs">Oups!</span><br/><span className="text-9xl font-open uppercase">404</span></h1>
+                <p className="py-6 text-xl">La page que vous cherchez n'existe pas. 🧐<br/>
+                    <span className="font-bold text-2xl">Pour retourner sur le site c'est par là !</span>
+                </p>
+                <Link href="/">
+                    <a className="btn btn-primary">Aller à l'accueil</a>
+                </Link>
             </div>
         </div>
     </div>

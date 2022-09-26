@@ -10,7 +10,7 @@ export default function Opportunities({anchor}) {
         <>
             <section ref={anchor} className="hero bg-black py-12">
                 <div className="container">
-                    <div className="ml-6 ml-0 my-12 w-2/5">
+                    <div className="ml-6 my-12 w-2/5">
                         <h2 className="text-secondary font-open italic mb-6">Les Opportunités</h2>
                         <h1 className="text-6xl text-base-100 font-open uppercase">nos différentes opportunités</h1>
                     </div>

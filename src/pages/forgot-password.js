@@ -1,11 +1,10 @@
-import ApplicationLogo from '@/components/ApplicationLogo'
-import AuthCard from '@/components/AuthCard'
-import AuthSessionStatus from '@/components/AuthSessionStatus'
-import AuthValidationErrors from '@/components/AuthValidationErrors'
-import Button from '@/components/Button'
+import AuthCard from '@/components/Auth/AuthCard'
+import AuthSessionStatus from '@/components/Auth/AuthSessionStatus'
+import AuthValidationErrors from '@/components/Auth/AuthValidationErrors'
+import Button from '@/components/Auth/Button'
 import GuestLayout from '@/components/Layouts/GuestLayout'
-import Input from '@/components/Input'
-import Label from '@/components/Label'
+import Input from '@/components/Auth/Input'
+import Label from '@/components/Auth/Label'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useState } from 'react'
@@ -28,16 +27,17 @@ const ForgotPassword = () => {
             <AuthCard
                 logo={
                     <Link href="/">
-                        <a>
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                        <a className="text-5xl font-open">POWER<span
+                            className="text-primary">CREW</span>
                         </a>
                     </Link>
                 }>
 
                 <div className="mb-4 text-sm text-gray-600">
-                    Forgot your password? No problem. Just let us know your
-                    email address and we will email you a password reset link
-                    that will allow you to choose a new one.
+                    Vous avez oublié votre mot de passe ? Aucun problème. <br/>
+                    Faites-nous simplement savoir votre adresse e-mail et nous vous enverrons par e-mail un lien de
+                    réinitialisation de mot de passe qui vous
+                    permettra d'en choisir un nouveau.
                 </div>
 
                 {/* Session Status */}
@@ -63,7 +63,7 @@ const ForgotPassword = () => {
                     </div>
 
                     <div className="flex items-center justify-end mt-4">
-                        <Button>Email Password Reset Link</Button>
+                        <Button>Envoyer le lien</Button>
                     </div>
                 </form>
             </AuthCard>
