@@ -2,6 +2,22 @@ import React from "react";
 import VideoPlayer from "@/components/VideoPlayer";
 
 export default function About({anchor}) {
+    const videoSrc = {
+        type: "video",
+        sources: [
+            {
+                src: '/assets/media/presentation.mp4',
+                type: 'video/mp4',
+                size: 1080,
+            }
+        ],
+        poster: '/assets/media/poster.jpeg',
+    };
+
+    const videoOptions = {
+        autoplay: true,
+    }
+
     return (
         <>
             <section ref={anchor} className="hero py-12" style={{backgroundImage:'url(https://www.hopculture.fr/wp-content/themes/hopculture/dist/imgs/texture-1.jpg)'}}>
@@ -12,7 +28,7 @@ export default function About({anchor}) {
                     </div>
                     <div className="py-12">
                         <div className="bg-primary mx-auto my-12 xl:px-24 lg:px-12 md:px-6 px-3 rounded-xl w-11/12">
-                            <VideoPlayer></VideoPlayer>
+                            <VideoPlayer videoSrc={videoSrc} videoOptions={videoOptions}></VideoPlayer>
                         </div>
                     </div>
                 </div>
